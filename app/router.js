@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('sockets', function() {
+    this.route('posts');
+  });
 });
 
 export default Router;
